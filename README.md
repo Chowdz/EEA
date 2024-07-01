@@ -35,7 +35,11 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
    ```tensorboard --logdir=logs```
 
 ## Result
+![Inpainting results under different mask sizes](example/Fig5_1Column_Qualitative_comparison1.jpg)
 
+![Partial inpainting result 1](example/FigA2_1Column_Inpainting_image_local.jpg)
+
+![Partial inpainting result 1](FigA3_1Column_Inpainting_image_local.jpg)
 
 
 
