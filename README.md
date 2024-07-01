@@ -13,15 +13,16 @@ NVIDIA GPU + CUDA cuDNN
 
 ## Installation
 1. Clone the repository:
+   
    ```git clone https://github.com/your-username/satellite-image-inpainting.git```
 
   ```cd satellite-image-inpainting```
   
 2. Install dependencies:
+   
   ```pip install -r requirements.txt```
   
-3. 
-  
+
 
 
 
