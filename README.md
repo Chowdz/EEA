@@ -46,8 +46,11 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
 
 ![Partial inpainting result 2](example/FigA3_1Column_Inpainting_image_local.jpg)
 
-## LICENSE
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+Feel free to contact us via email [dazhizhou18@gmail.com](dazhizhou18@gmail.com) or GitHub Issues for questions, feedback, or contributions to this project. We appreciate your interest!
 
 
 
