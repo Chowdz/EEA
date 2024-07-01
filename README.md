@@ -14,9 +14,9 @@ NVIDIA GPU + CUDA cuDNN
 ## Installation
 1. Clone the repository:
    
-   ```git clone https://github.com/your-username/satellite-image-inpainting.git```
+   ```git clone https://github.com/Chowdz/EEA.git```
 
-   ```cd satellite-image-inpainting```
+   ```cd EEA```
   
 2. Install dependencies:
    
