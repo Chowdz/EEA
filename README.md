@@ -22,7 +22,9 @@ NVIDIA GPU + CUDA cuDNN
    
   ```pip install -r requirements.txt```
   
+## Dataset
 
+We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.06.031) to obtain a dataset of satellite images collected before May 31, 2003. Each image has dimensions of 8131×7061 pixels, a spatial resolution of 30 meters, and consists of 8 bands. The dataset was curated to include satellite images with cloud coverage below 1%. Our experiments focused specifically on bands B1, B2, and B3. Each satellite image was segmented into 400 images of size 256×256 pixels, covering an area of approximately 59 $km^2$ each. To test the capability of our model to address more complex losses beyond scanline corruption in satellite images, we utilized a manually drawn mask dataset [Quick Draw Irregular Mask Dataset](https://github.com/karfly/qd-imd).
 
 
 
