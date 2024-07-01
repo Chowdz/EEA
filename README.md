@@ -21,6 +21,9 @@ NVIDIA GPU + CUDA cuDNN
 2. Install dependencies:
    
   ```pip install -r requirements.txt```
+
+## Pipeline
+
   
 ## Dataset
 
