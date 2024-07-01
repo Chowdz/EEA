@@ -207,15 +207,16 @@ class Trainer(nn.Module):
 
 if __name__ == '__main__':
     opt = Options()
-    train = Trainer(batch_size=opt.BATCH_SIZE,
-                    epoch=opt.EPOCH, n_epoch=opt.N_EPOCH, lr=opt.LR, beta1=opt.BETA1, beta2=opt.BETA2,
-                    img_size=opt.IMG_SIZE, in_c=opt.IN_C, out_c=opt.OUT_C, patch_size=opt.PATCH_SIZE,
-                    embed_dim=opt.EMBED_DIM, depth=opt.DEPTH, num_heads=opt.NUM_HEADS,
-                    adv_loss_weight=opt.ADV_LOSS_WEIGHT, per_loss_weight=opt.PER_LOSS_WEIGHT,
-                    sty_loss_weight=opt.STY_LOSS_WEIGHT, l1_loss_weight=opt.L1_LOSS_WEIGHT,
-                    sobel_loss_weight=opt.SOBEL_LOSS_WEIGHT, sample_interval=opt.SAMPLE_INTERVAL,
-                    save_model_root=opt.SAVE_MODEL_ROOT, train_result_root=opt.TRAIN_RESULT_ROOT,
+    args = opt.parse_arguments()
+    train = Trainer(batch_size=args.BATCH_SIZE,
+                    epoch=args.EPOCH, n_epoch=args.N_EPOCH, lr=args.LR, beta1=args.BETA1, beta2=args.BETA2,
+                    img_size=args.IMG_SIZE, in_c=args.IN_C, out_c=args.OUT_C, patch_size=args.PATCH_SIZE,
+                    embed_dim=args.EMBED_DIM, depth=args.DEPTH, num_heads=args.NUM_HEADS,
+                    adv_loss_weight=args.ADV_LOSS_WEIGHT, per_loss_weight=args.PER_LOSS_WEIGHT,
+                    sty_loss_weight=args.STY_LOSS_WEIGHT, l1_loss_weight=args.L1_LOSS_WEIGHT,
+                    sobel_loss_weight=args.SOBEL_LOSS_WEIGHT, sample_interval=args.SAMPLE_INTERVAL,
+                    save_model_root=args.SAVE_MODEL_ROOT, train_result_root=args.TRAIN_RESULT_ROOT,
                     drop_ratio=0.2, attn_drop_ratio=0.3, drop_path_ratio=0.2)
 
-    dataset = SatelliteDateset(image_root=opt.TRAIN_IMG_ROOT, mask_root=opt.TRAIN_MASK_ROOT)
+    dataset = SatelliteDateset(image_root=args.TRAIN_IMG_ROOT, mask_root=args.TRAIN_MASK_ROOT)
     G = train(dataset)

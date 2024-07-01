@@ -43,11 +43,13 @@ class SatelliteDateset(Dataset):
         sobel_z = cv2.Sobel(img_gray, cv2.CV_64F, 1, 1, ksize=3)
 
         img_sobel = torch.tensor(sobel_x ** 2 + sobel_y ** 2 + sobel_z ** 2, dtype=torch.float32).unsqueeze(0)
+        sobel_mask = torch.abs(torch.sqrt(img_sobel * (1 - mask_tensor)))
+        sobel_mask = (sobel_mask - torch.min(sobel_mask)) / (torch.max(sobel_mask) - torch.min(sobel_mask))
 
         sobel_tensor = np.abs(np.sqrt(img_sobel))
         sobel_tensor = (sobel_tensor - torch.min(sobel_tensor)) / (torch.max(sobel_tensor) - torch.min(sobel_tensor))
 
-        return img_tensor, mask_tensor, sobel_tensor
+        return img_tensor, mask_tensor, sobel_mask, sobel_tensor
 
     def __len__(self):
         return self.number_image
