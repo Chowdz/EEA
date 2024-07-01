@@ -23,7 +23,7 @@ NVIDIA GPU + CUDA cuDNN
   ```pip install -r requirements.txt```
 
 ## Pipeline
-
+![networks](example/Fig2_1Column_Networks_structure.jpg)
   
 ## Dataset
 
