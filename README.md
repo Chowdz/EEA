@@ -16,11 +16,11 @@ NVIDIA GPU + CUDA cuDNN
    
    ```git clone https://github.com/your-username/satellite-image-inpainting.git```
 
-  ```cd satellite-image-inpainting```
+   ```cd satellite-image-inpainting```
   
 2. Install dependencies:
    
-  ```pip install -r requirements.txt```
+   ```pip install -r requirements.txt```
 
 ## Pipeline
 ![networks](example/Fig2_1Column_Networks_structure.jpg)
@@ -31,10 +31,12 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
 
 ## Training
 
-1. Start
+1. Start:
+
    ```python trainer.py --batch_size 10 --epoch 5 --n_epoch 2000 --lr 0.0005 --beta1 0.95 --beta2 0.9995 --train_img_root 'data/train' --train_mask_root 'data/mask' --train_result_root 'data/result/' --save_model_root 'models/' --img_size 256 --in_c 4 --out_c 3 --patch_size 4 --embed_dim 64 --depth [1, 2, 3, 4] --num_heads [1, 2, 4, 8] --adv_loss_weight 0.8 --per_loss_weight 0.3 --sty_loss_weight 15000.0 --l1_loss_weight 50.0 --sobel_loss_weight 100.0 --sample_interval 500```
 
-2. Tensorboard
+2. Tensorboard:
+   
    ```tensorboard --logdir=logs```
 
 ## Result
