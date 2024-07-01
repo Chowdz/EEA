@@ -39,7 +39,7 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
 
 ![Partial inpainting result 1](example/FigA2_1Column_Inpainting_image_local.jpg)
 
-![Partial inpainting result 1](FigA3_1Column_Inpainting_image_local.jpg)
+![Partial inpainting result 2](example/FigA3_1Column_Inpainting_image_local.jpg)
 
 
 
