@@ -6,5 +6,23 @@ Satellite image inpainting is an important task in remote sensing and image proc
 
 ## Requirements
 Python >=3.6
+
 PyTorch >=1.6
+
 NVIDIA GPU + CUDA cuDNN
+
+## Installation
+1. Clone the repository:
+   ```git clone https://github.com/your-username/satellite-image-inpainting.git```
+
+  ```cd satellite-image-inpainting```
+  
+2. Install dependencies:
+  ```pip install -r requirements.txt```
+  
+3. 
+  
+
+
+
+
