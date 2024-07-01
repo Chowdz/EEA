@@ -28,11 +28,7 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
 
 ## Training
 
-```python trainer.py --batch_size 10 --epoch 5 --n_epoch 2000 --lr 0.0005 --beta1 0.95 --beta2 0.9995 \
-    --train_img_root 'data/train' --train_mask_root 'data/mask' --train_result_root 'data/result/' --save_model_root 'models/' \
-    --img_size 512 --in_c 3 --out_c 3 --patch_size 8 --embed_dim 128 --depth 2 3 4 5 --num_heads 1 2 4 8 \
-    --adv_loss_weight 0.8 --per_loss_weight 0.3 --sty_loss_weight 15000.0 --l1_loss_weight 50.0 --sobel_loss_weight 100.0 \
-    --sample_interval 500```
+```python trainer.py --batch_size 10 --epoch 5 --n_epoch 2000 --lr 0.0005 --beta1 0.95 --beta2 0.9995 --train_img_root 'data/train' --train_mask_root 'data/mask' --train_result_root 'data/result/' --save_model_root 'models/' --img_size 512 --in_c 3 --out_c 3 --patch_size 8 --embed_dim 128 --depth 2 3 4 5 --num_heads 1 2 4 8 --adv_loss_weight 0.8 --per_loss_weight 0.3 --sty_loss_weight 15000.0 --l1_loss_weight 50.0 --sobel_loss_weight 100.0 --sample_interval 500```
 
 
 
