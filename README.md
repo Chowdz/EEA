@@ -46,5 +46,8 @@ We utilized [Google Earth Engine (GEE) API](https://doi.org/10.1016/j.rse.2017.0
 
 ![Partial inpainting result 2](example/FigA3_1Column_Inpainting_image_local.jpg)
 
+## LICENSE
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
