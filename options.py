@@ -32,7 +32,7 @@ class Options:
 
         self.ADV_LOSS_WEIGHT: float = 1.
         self.PER_LOSS_WEIGHT: float = 0.5
-        self.STY_LOSS_WEIGHT: float = 10000.
+        self.STY_LOSS_WEIGHT: float = 1000.
         self.L1_LOSS_WEIGHT: float = 100.
         self.SOBEL_LOSS_WEIGHT: float = 80.
 
